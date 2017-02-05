@@ -60,7 +60,6 @@ $(document).ready(function()
         var sectionFour = $('.section4').offset().top;
         var windowLocal = topNav;
         
-        alert(sectionTwo);
         
         if (sectionOne >= windowLocal)
         {
@@ -106,6 +105,7 @@ $(document).ready(function()
         }
     });
     
+    alert(sectionTwo);
     /* End add activeBtn for sideBtn */
     
 });
