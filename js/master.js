@@ -52,7 +52,7 @@ $(document).ready(function()
         $(this).addClass('activeBtn');
     });
     
-    /*$(window).scroll(function()
+    $(window).scroll(function()
     {
         var sectionOne = $('.section1').offset().top;
         var sectionTwo = $('.section2').offset().top;
@@ -103,19 +103,7 @@ $(document).ready(function()
                 $('.section4 .rightSectionText').addClass('fadeInUpBig animated').show();
             }, 500);
         }
-    });*/
-    
-    var waypoint = new Waypoint({
-      element: document.getElementsByClassName('section2'),
-      handler: function() {
-          $('.sideBtn').removeClass('activeBtn');
-          $('.sectionTwo').addClass('activeBtn');
-          $('.section2 .leftSectionText').addClass('fadeInLeftBig animated').show();
-          $('.section2 .rightSectionText').addClass('fadeInRightBig animated').show();
-          $('.leftSectionText').removeClass('fadeOutLeftBig');
-          $('.rightSectionText').removeClass('fadeOutRightBig');
-      }
-    })
+    });
     
     /* End add activeBtn for sideBtn */
     
