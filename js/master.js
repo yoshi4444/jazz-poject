@@ -52,64 +52,46 @@ $(document).ready(function()
         $(this).addClass('activeBtn');
     });
     
-    $(window).scroll(function()
-    {
-        var sectionOne = $('.section1').offset().top;
-        var sectionTwo = $('.section2').offset().top;
-        var sectionThree = $('.section3').offset().top;
-        var sectionFour = $('.section4').offset().top;
-        var windowLocal = $(this).scrollTop();
-        
-        
-        if (sectionOne >= windowLocal)
-        {
-            setTimeout(function()
-            {
-                $('.sideBtn').removeClass('activeBtn');
-                $('.sectionOne').addClass('activeBtn');
-                $('.leftSectionText').removeClass('fadeInLeftBig').hide();
-                $('.rightSectionText').removeClass('fadeInRightBig').hide();
-            },500);
-        }
-        /*else if (sectionTwo >= windowLocal)
-        {
-            setTimeout(function()
-            {
-                $('.sideBtn').removeClass('activeBtn');
-                $('.sectionTwo').addClass('activeBtn');
-                $('.section2 .leftSectionText').addClass('fadeInLeftBig animated').show();
-                $('.section2 .rightSectionText').addClass('fadeInRightBig animated').show();
-                $('.leftSectionText').removeClass('fadeOutLeftBig');
-                $('.rightSectionText').removeClass('fadeOutRightBig');
-            },500);
-        }*/
-        else if (sectionThree >= windowLocal)
-        {
-            setTimeout(function()
-            {
-                $('.sideBtn').removeClass('activeBtn');
-                $('.sectionThree').addClass('activeBtn');
-                $('.section3 .leftSectionText').addClass('fadeInLeftBig animated').show();
-                $('.section3 .rightSectionText').addClass('fadeInRightBig animated').show();
-            }, 500);
-        }
-        else if (sectionFour >= windowLocal)
-        {
-            setTimeout(function()
-            {
-                $('.sideBtn').removeClass('activeBtn');
-                $('.sectionFour').addClass('activeBtn');
-                $('.section4 .leftSectionText').addClass('fadeInLeftBig animated').show();
-                $('.section4 .rightSectionText').addClass('fadeInRightBig animated').show();
-            }, 500);
-        }
-    });
     
+    
+    $('.section1').waypoint(function() {
+        $('.sideBtn').removeClass('activeBtn');
+        $('.sectionOne').addClass('activeBtn');
+        $('.leftSectionText').removeClass('fadeInLeftBig animated').show();
+        $('.rightSectionText').removeClass('fadeInRightBig animated').show();
+        $('.leftSectionText').addClass('fadeOutLeftBig');
+        $('.rightSectionText').addClass('fadeOutRightBig');
+        },
+        {
+            offset: '0%'
+    });
     $('.section2').waypoint(function() {
         $('.sideBtn').removeClass('activeBtn');
         $('.sectionTwo').addClass('activeBtn');
         $('.section2 .leftSectionText').addClass('fadeInLeftBig animated').show();
         $('.section2 .rightSectionText').addClass('fadeInRightBig animated').show();
+        $('.leftSectionText').removeClass('fadeOutLeftBig');
+        $('.rightSectionText').removeClass('fadeOutRightBig');
+        },
+        {
+            offset: '50%'
+    });
+    $('.section3').waypoint(function() {
+        $('.sideBtn').removeClass('activeBtn');
+        $('.sectionThree').addClass('activeBtn');
+        $('.section3 .leftSectionText').addClass('fadeInLeftBig animated').show();
+        $('.section3 .rightSectionText').addClass('fadeInRightBig animated').show();
+        $('.leftSectionText').removeClass('fadeOutLeftBig');
+        $('.rightSectionText').removeClass('fadeOutRightBig');
+        },
+        {
+            offset: '50%'
+    });
+    $('.section4').waypoint(function() {
+        $('.sideBtn').removeClass('activeBtn');
+        $('.sectionFout').addClass('activeBtn');
+        $('.section4 .leftSectionText').addClass('fadeInLeftBig animated').show();
+        $('.section4 .rightSectionText').addClass('fadeInRightBig animated').show();
         $('.leftSectionText').removeClass('fadeOutLeftBig');
         $('.rightSectionText').removeClass('fadeOutRightBig');
         },
