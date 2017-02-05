@@ -58,7 +58,7 @@ $(document).ready(function()
         var sectionTwo = $('.section2').offset().top;
         var sectionThree = $('.section3').offset().top;
         var sectionFour = $('.section4').offset().top;
-        var windowLocal = windowPage;
+        var windowLocal = $(this).scrollTop();
         
         
         if (sectionOne >= windowLocal)
@@ -105,7 +105,6 @@ $(document).ready(function()
         }
     });
     
-    alert(sectionTwo);
     /* End add activeBtn for sideBtn */
     
 });
