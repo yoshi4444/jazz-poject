@@ -63,22 +63,22 @@ $(document).ready(function()
         if (sectionOne > windowLocal)
         {
             $('.sideBtn').removeClass('activeBtn');
-            $('.sectionOne').addClass('activeBtn');
+            $('.sectionOne').addClass('activeBtn').delay(500);
         }
         else if (sectionTwo > windowLocal)
         {
             $('.sideBtn').removeClass('activeBtn');
-            $('.sectionTwo').addClass('activeBtn');
+            $('.sectionTwo').addClass('activeBtn').delay(500);
         }
         else if (sectionThree > windowLocal)
         {
             $('.sideBtn').removeClass('activeBtn');
-            $('.sectionThree').addClass('activeBtn');
+            $('.sectionThree').addClass('activeBtn').delay(500);
         }
         else if (sectionFour > windowLocal)
         {
             $('.sideBtn').removeClass('activeBtn');
-            $('.sectionFour').addClass('activeBtn');
+            $('.sectionFour').addClass('activeBtn').delay(500);
         }
     });
     
