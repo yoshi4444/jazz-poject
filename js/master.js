@@ -62,11 +62,8 @@ $(document).ready(function()
         
         if (sectionOne > windowLocal)
         {
-            setTimeout(function()
-            {
-                $('.sideBtn').removeClass('activeBtn');
-                $('.sectionOne').addClass('activeBtn');
-            },300);
+            $('.sideBtn').removeClass('activeBtn');
+            $('.sectionOne').addClass('activeBtn');
             setTimeout(function()
             {
                 $('.leftSectionText').removeClass('fadeInLeftBig, rotateInDownLeft, fadeInDownBig').hide();
@@ -75,11 +72,8 @@ $(document).ready(function()
         }
         else if (sectionTwo > windowLocal)
         {
-            setTimeout(function()
-            {
-                $('.sideBtn').removeClass('activeBtn');
-                $('.sectionOne').addClass('activeBtn');
-            },300);
+            $('.sideBtn').removeClass('activeBtn');
+            $('.sectionOne').addClass('activeBtn');
             setTimeout(function()
             {
                 $('.section2 .leftSectionText').addClass('fadeInLeftBig animated').show();
@@ -90,11 +84,8 @@ $(document).ready(function()
         }
         else if (sectionThree > windowLocal)
         {
-            setTimeout(function()
-            {
-                $('.sideBtn').removeClass('activeBtn');
-                $('.sectionOne').addClass('activeBtn');
-            },300);
+            $('.sideBtn').removeClass('activeBtn');
+            $('.sectionOne').addClass('activeBtn');
             setTimeout(function()
             {
                 $('.section3 .leftSectionText').addClass('rotateInDownLeft animated').show();
@@ -103,11 +94,8 @@ $(document).ready(function()
         }
         else if (sectionFour > windowLocal)
         {
-            setTimeout(function()
-            {
-                $('.sideBtn').removeClass('activeBtn');
-                $('.sectionOne').addClass('activeBtn');
-            },300);
+            $('.sideBtn').removeClass('activeBtn');
+            $('.sectionOne').addClass('activeBtn');
             setTimeout(function()
             {
                 $('.section4 .leftSectionText').addClass('fadeInDownBig animated').show();
