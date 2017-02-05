@@ -62,7 +62,17 @@ $(document).ready(function()
             $('.sideBtn').removeClass('activeBtn');
             $('.sectionOne').addClass('activeBtn');
         }
-        if (sectionTwo > windowLocal)
+        else if (sectionTwo > windowLocal)
+        {
+            $('.sideBtn').removeClass('activeBtn');
+            $('.sectionTwo').addClass('activeBtn');
+        }
+        else if (sectionThree > windowLocal)
+        {
+            $('.sideBtn').removeClass('activeBtn');
+            $('.sectionTwo').addClass('activeBtn');
+        }
+        else if (sectionFour > windowLocal)
         {
             $('.sideBtn').removeClass('activeBtn');
             $('.sectionTwo').addClass('activeBtn');
