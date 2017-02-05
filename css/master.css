@@ -190,10 +190,12 @@ body
         .leftSectionText 
         {
             left:35px;
+            top:0;
         }
         .rightSectionText 
         { 
             right:0;
+            top:20px;
         }
             .subSectionTitle 
             { 
