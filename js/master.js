@@ -63,7 +63,7 @@ $(document).ready(function()
         $('.rightSectionText').addClass('fadeOutRightBig');
         },
         {
-            offset: '50%'
+            offset: '0%'
     });
     $('.section2').waypoint(function() {
         $('.sideBtn').removeClass('activeBtn');
