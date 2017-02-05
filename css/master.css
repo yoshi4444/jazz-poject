@@ -185,14 +185,15 @@ body
         height:72%;
         background:#fff;
         color:#0D223F;
+        position:relative;
     }
         .leftSectionText 
         {
-            padding:50px 0 50px 70px;
+            left:70px;
         }
         .rightSectionText 
         { 
-            padding:50px 70px 50px 0;
+            right:70px;
         }
             .subSectionTitle 
             { 
