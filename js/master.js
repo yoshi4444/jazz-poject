@@ -54,14 +54,15 @@ $(document).ready(function()
     
     $(window).scroll(function()
     {
-        var sectionOne = $('.section1').scrollTop();
-        var sectionTwo = $('.section2').scrollTop();
-        if (sectionOne > topNav)
+        var sectionOne = $('.section1').offset().top;
+        var sectionTwo = $('.section2').offset().top;
+        var windowLocal = $(window).scrollTop();
+        if (sectionOne > windowLocal)
         {
             $('.sideBtn').removeClass('activeBtn');
             $('.sectionOne').addClass('activeBtn');
         }
-        if (sectionTwo > topNav)
+        if (sectionTwo > windowLocal)
         {
             $('.sideBtn').removeClass('activeBtn');
             $('.sectionTwo').addClass('activeBtn');
