@@ -57,8 +57,8 @@ $(document).ready(function()
     $('.section1').waypoint(function() {
         $('.sideBtn').removeClass('activeBtn');
         $('.sectionOne').addClass('activeBtn');
-        $('.leftSectionText').removeClass('fadeInLeftBig animated').show();
-        $('.rightSectionText').removeClass('fadeInRightBig animated').show();
+        $('.leftSectionText').removeClass('fadeInLeftBig animated').hide();
+        $('.rightSectionText').removeClass('fadeInRightBig animated').hide();
         $('.leftSectionText').addClass('fadeOutLeftBig');
         $('.rightSectionText').addClass('fadeOutRightBig');
         },
