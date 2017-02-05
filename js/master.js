@@ -67,8 +67,8 @@ $(document).ready(function()
             {
                 $('.sideBtn').removeClass('activeBtn');
                 $('.sectionOne').addClass('activeBtn');
-                $('.leftSectionText').removeClass('fadeInLeftBig, rotateInDownLeft, fadeInDownBig').hide();
-                $('.rightSectionText').removeClass('fadeInRightBig, rotateInDownRight, fadeInUpBig').hide();
+                $('.leftSectionText').removeClass('fadeInLeftBig').hide();
+                $('.rightSectionText').removeClass('fadeInRightBig').hide();
             },500);
         }
         else if (sectionTwo >= windowLocal)
@@ -89,8 +89,8 @@ $(document).ready(function()
             {
                 $('.sideBtn').removeClass('activeBtn');
                 $('.sectionThree').addClass('activeBtn');
-                $('.section3 .leftSectionText').addClass('rotateInDownLeft animated').show();
-                $('.section3 .rightSectionText').addClass('rotateInDownRight animated').show();
+                $('.section3 .leftSectionText').addClass('fadeInLeftBig animated').show();
+                $('.section3 .rightSectionText').addClass('fadeInRightBig animated').show();
             }, 500);
         }
         else if (sectionFour >= windowLocal)
@@ -99,8 +99,8 @@ $(document).ready(function()
             {
                 $('.sideBtn').removeClass('activeBtn');
                 $('.sectionFour').addClass('activeBtn');
-                $('.section4 .leftSectionText').addClass('fadeInDownBig animated').show();
-                $('.section4 .rightSectionText').addClass('fadeInUpBig animated').show();
+                $('.section4 .leftSectionText').addClass('fadeInLeftBig animated').show();
+                $('.section4 .rightSectionText').addClass('fadeInRightBig animated').show();
             }, 500);
         }
     });
