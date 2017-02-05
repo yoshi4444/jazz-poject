@@ -59,13 +59,17 @@ $(document).ready(function()
         var sectionThree = $('.section3').offset().top;
         var sectionFour = $('.section4').offset().top;
         var windowLocal = $(window).scrollTop();
+        var removeSideBtn = $('.sideBtn').removeClass('activeBtn');
         
         if (sectionOne > windowLocal)
         {
             setTimeout(function()
             {
-                $('.sideBtn').removeClass('activeBtn');
+                removeSideBtn;
                 $('.sectionOne').addClass('activeBtn');
+            },200);
+            setTimeout(function()
+            {
                 $('.leftSectionText').removeClass('fadeInLeftBig, rotateInDownLeft, fadeInDownBig').hide();
                 $('.rightSectionText').removeClass('fadeInRightBig, rotateInDownRight, fadeInUpBig').hide();
             },500);
@@ -74,8 +78,11 @@ $(document).ready(function()
         {
             setTimeout(function()
             {
-                $('.sideBtn').removeClass('activeBtn');
-                $('.sectionTwo').addClass('activeBtn');
+                removeSideBtn;
+                $('.sectionOne').addClass('activeBtn');
+            },200);
+            setTimeout(function()
+            {
                 $('.section2 .leftSectionText').addClass('fadeInLeftBig animated').show();
                 $('.section2 .rightSectionText').addClass('fadeInRightBig animated').show();
                 $('.leftSectionText').removeClass('fadeOutLeftBig');
@@ -86,8 +93,11 @@ $(document).ready(function()
         {
             setTimeout(function()
             {
-                $('.sideBtn').removeClass('activeBtn');
-                $('.sectionThree').addClass('activeBtn');
+                removeSideBtn;
+                $('.sectionOne').addClass('activeBtn');
+            },200);
+            setTimeout(function()
+            {
                 $('.section3 .leftSectionText').addClass('rotateInDownLeft animated').show();
                 $('.section3 .rightSectionText').addClass('rotateInDownRight animated').show();
             }, 500);
@@ -96,8 +106,11 @@ $(document).ready(function()
         {
             setTimeout(function()
             {
-                $('.sideBtn').removeClass('activeBtn');
-                $('.sectionFour').addClass('activeBtn');
+                removeSideBtn;
+                $('.sectionOne').addClass('activeBtn');
+            },200);
+            setTimeout(function()
+            {
                 $('.section4 .leftSectionText').addClass('fadeInDownBig animated').show();
                 $('.section4 .rightSectionText').addClass('fadeInUpBig animated').show();
             }, 500);
