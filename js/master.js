@@ -68,7 +68,7 @@ $(document).ready(function()
                 $('.sectionOne').addClass('activeBtn');
                 $('.leftSectionText').removeClass('fadeInLeftBig, rotateInDownLeft, fadeInDownBig').hide();
                 $('.rightSectionText').removeClass('fadeInRightBig, rotateInDownRight, fadeInUpBig').hide();
-            },1000);
+            },500);
         }
         else if (sectionTwo > windowLocal)
         {
@@ -80,7 +80,7 @@ $(document).ready(function()
                 $('.section2 .rightSectionText').addClass('fadeInRightBig animated').show();
                 $('.leftSectionText').removeClass('fadeOutLeftBig');
                 $('.rightSectionText').removeClass('fadeOutRightBig');
-            },1000);
+            },500);
         }
         else if (sectionThree > windowLocal)
         {
@@ -90,7 +90,7 @@ $(document).ready(function()
                 $('.sectionThree').addClass('activeBtn');
                 $('.section3 .leftSectionText').addClass('rotateInDownLeft animated').show();
                 $('.section3 .rightSectionText').addClass('rotateInDownRight animated').show();
-            }, 1000);
+            }, 500);
         }
         else if (sectionFour > windowLocal)
         {
@@ -100,7 +100,7 @@ $(document).ready(function()
                 $('.sectionFour').addClass('activeBtn');
                 $('.section4 .leftSectionText').addClass('fadeInDownBig animated').show();
                 $('.section4 .rightSectionText').addClass('fadeInUpBig animated').show();
-            }, 1000);
+            }, 500);
         }
     });
     

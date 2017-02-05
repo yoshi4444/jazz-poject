@@ -191,11 +191,13 @@ body
         {
             left:35px;
             top:0;
+            display:none; 
         }
         .rightSectionText 
         { 
             right:0;
             top:20px;
+            display:none;
         }
             .subSectionTitle 
             { 
