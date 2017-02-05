@@ -69,6 +69,8 @@ $(document).ready(function()
         {
             $('.sideBtn').removeClass('activeBtn');
             $('.sectionTwo').addClass('activeBtn').delay(500);
+            $('.leftSectionText').addClass('.fadeInLeftBig').delay(1000);
+            $('.rightSectionText').addClass('.fadeInRightBig').delay(1000);
         }
         else if (sectionThree > windowLocal)
         {
