@@ -55,7 +55,7 @@ $(document).ready(function()
     $(window).scroll(function()
     {
         var sectionOne = $('.section1').offset().top;
-        var sectionTwo = $('.section2').offset().bottom;
+        var sectionTwo = $('.section2').offset().top;
         var sectionThree = $('.section3').offset().top;
         var sectionFour = $('.section4').offset().top;
         var windowLocal = $(window).scrollTop();
