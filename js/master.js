@@ -66,6 +66,8 @@ $(document).ready(function()
             $('.sectionOne').addClass('activeBtn').delay(500);
             $('.leftSectionText').addClass('fadeOutLeftBig');
             $('.rightSectionText').addClass('fadeOutRightBig');
+            $('.leftSectionText').delay(1000).removeClass('fadeInLeftBig');
+            $('.rightSectionText').delay(1000).removeClass('fadeInRightBig');
         }
         else if (sectionTwo > windowLocal)
         {
@@ -73,6 +75,8 @@ $(document).ready(function()
             $('.sectionTwo').delay(500).addClass('activeBtn');
             $('.leftSectionText').delay(1000).addClass('fadeInLeftBig animated');
             $('.rightSectionText').delay(1000).addClass('fadeInRightBig animated');
+            $('.leftSectionText').removeClass('fadeOutLeftBig');
+            $('.rightSectionText').removeClass('fadeOutRightBig');
         }
         else if (sectionThree > windowLocal)
         {
