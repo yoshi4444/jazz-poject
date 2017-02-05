@@ -68,19 +68,19 @@ $(document).ready(function()
         else if (sectionTwo > windowLocal)
         {
             $('.sideBtn').removeClass('activeBtn');
-            $('.sectionTwo').addClass('activeBtn').delay(500);
-            $('.leftSectionText').addClass('fadeInLeftBig animated').delay(1000);
-            $('.rightSectionText').addClass('fadeInRightBig animated').delay(1000);
+            $('.sectionTwo').delay(500).addClass('activeBtn');
+            $('.leftSectionText').delay(1000).addClass('fadeInLeftBig animated');
+            $('.rightSectionText').delay(1000).addClass('fadeInRightBig animated');
         }
         else if (sectionThree > windowLocal)
         {
             $('.sideBtn').removeClass('activeBtn');
-            $('.sectionThree').addClass('activeBtn').delay(500);
+            $('.sectionThree').delay(500).addClass('activeBtn');
         }
         else if (sectionFour > windowLocal)
         {
             $('.sideBtn').removeClass('activeBtn');
-            $('.sectionFour').addClass('activeBtn').delay(500);
+            $('.sectionFour').delay(500).addClass('activeBtn');
         }
     });
     
