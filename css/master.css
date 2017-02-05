@@ -184,7 +184,20 @@ body
     {
         height:72%;
         background:#fff;
+        color:#0D223F;
     }
+        .leftSectionText 
+        {
+            
+        }
+        .rightSectionText 
+        { 
+            
+        }
+            .subSectionTitle 
+            { 
+                font-size:20px; padding:20px 0; 
+            }
     
 .section1
 {
