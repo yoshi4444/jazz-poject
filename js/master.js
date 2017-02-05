@@ -63,7 +63,7 @@ $(document).ready(function()
         $('.rightSectionText').addClass('fadeOutRightBig');
         },
         {
-            offset: '0%'
+            offset: '50%'
     });
     $('.section2').waypoint(function() {
         $('.sideBtn').removeClass('activeBtn');
@@ -89,7 +89,7 @@ $(document).ready(function()
     });
     $('.section4').waypoint(function() {
         $('.sideBtn').removeClass('activeBtn');
-        $('.sectionFout').addClass('activeBtn');
+        $('.sectionFour').addClass('activeBtn');
         $('.section4 .leftSectionText').addClass('fadeInLeftBig animated').show();
         $('.section4 .rightSectionText').addClass('fadeInRightBig animated').show();
         $('.leftSectionText').removeClass('fadeOutLeftBig');
