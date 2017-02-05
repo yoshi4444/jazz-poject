@@ -56,6 +56,9 @@ $(document).ready(function()
     {
         var sectionOne = $('.section1').offset().top;
         var sectionTwo = $('.section2').offset().top;
+        var sectionThree = $('.section3').offset().top;
+        var sectionFour = $('.section4').offset().top;
+        
         var windowLocal = $(window).scrollTop();
         if (sectionOne > windowLocal)
         {
@@ -70,12 +73,12 @@ $(document).ready(function()
         else if (sectionThree > windowLocal)
         {
             $('.sideBtn').removeClass('activeBtn');
-            $('.sectionTwo').addClass('activeBtn');
+            $('.sectionThree').addClass('activeBtn');
         }
         else if (sectionFour > windowLocal)
         {
             $('.sideBtn').removeClass('activeBtn');
-            $('.sectionTwo').addClass('activeBtn');
+            $('.sectionFour').addClass('activeBtn');
         }
     });
     
