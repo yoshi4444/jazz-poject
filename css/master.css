@@ -199,3 +199,7 @@ body
     { 
         display:none; 
     }
+#bodySection 
+{
+    overflow:hidden; 
+}
