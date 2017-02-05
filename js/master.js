@@ -60,7 +60,7 @@ $(document).ready(function()
         var sectionFour = $('.section4').offset().top;
         var windowLocal = topNav;
         
-        alert(sectionOne);
+        alert(sectionTwo);
         
         if (sectionOne >= windowLocal)
         {
