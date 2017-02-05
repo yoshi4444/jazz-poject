@@ -62,20 +62,20 @@ $(document).ready(function()
         
         if (sectionOne > windowLocal)
         {
-            $('.sideBtn').removeClass('activeBtn');
-            $('.sectionOne').addClass('activeBtn');
             setTimeout(function()
             {
+                $('.sideBtn').removeClass('activeBtn');
+                $('.sectionOne').addClass('activeBtn');
                 $('.leftSectionText').removeClass('fadeInLeftBig, rotateInDownLeft, fadeInDownBig').hide();
                 $('.rightSectionText').removeClass('fadeInRightBig, rotateInDownRight, fadeInUpBig').hide();
             },500);
         }
         else if (sectionTwo > windowLocal)
         {
-            $('.sideBtn').removeClass('activeBtn');
-            $('.sectionOne').addClass('activeBtn');
             setTimeout(function()
             {
+                $('.sideBtn').removeClass('activeBtn');
+                $('.sectionTwo').addClass('activeBtn');
                 $('.section2 .leftSectionText').addClass('fadeInLeftBig animated').show();
                 $('.section2 .rightSectionText').addClass('fadeInRightBig animated').show();
                 $('.leftSectionText').removeClass('fadeOutLeftBig');
@@ -84,20 +84,20 @@ $(document).ready(function()
         }
         else if (sectionThree > windowLocal)
         {
-            $('.sideBtn').removeClass('activeBtn');
-            $('.sectionOne').addClass('activeBtn');
             setTimeout(function()
             {
+                $('.sideBtn').removeClass('activeBtn');
+                $('.sectionThree').addClass('activeBtn');
                 $('.section3 .leftSectionText').addClass('rotateInDownLeft animated').show();
                 $('.section3 .rightSectionText').addClass('rotateInDownRight animated').show();
             }, 500);
         }
         else if (sectionFour > windowLocal)
         {
-            $('.sideBtn').removeClass('activeBtn');
-            $('.sectionOne').addClass('activeBtn');
             setTimeout(function()
             {
+                $('.sideBtn').removeClass('activeBtn');
+                $('.sectionFour').addClass('activeBtn');
                 $('.section4 .leftSectionText').addClass('fadeInDownBig animated').show();
                 $('.section4 .rightSectionText').addClass('fadeInUpBig animated').show();
             }, 500);
