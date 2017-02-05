@@ -111,7 +111,10 @@ $(document).ready(function()
         $('.section2 .leftSectionText').addClass('fadeInLeftBig animated').show();
         $('.section2 .rightSectionText').addClass('fadeInRightBig animated').show();
         $('.leftSectionText').removeClass('fadeOutLeftBig');
-        $('.rightSectionText').removeClass('fadeOutRightBig');    
+        $('.rightSectionText').removeClass('fadeOutRightBig');
+        },
+        {
+            offset: '50%'
     });
          
     
