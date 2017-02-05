@@ -71,7 +71,7 @@ $(document).ready(function()
                 $('.rightSectionText').removeClass('fadeInRightBig').hide();
             },500);
         }
-        else if (sectionTwo >= windowLocal)
+        /*else if (sectionTwo >= windowLocal)
         {
             setTimeout(function()
             {
@@ -82,7 +82,7 @@ $(document).ready(function()
                 $('.leftSectionText').removeClass('fadeOutLeftBig');
                 $('.rightSectionText').removeClass('fadeOutRightBig');
             },500);
-        }
+        }*/
         else if (sectionThree >= windowLocal)
         {
             setTimeout(function()
@@ -104,6 +104,16 @@ $(document).ready(function()
             }, 500);
         }
     });
+    
+    $('.section2').waypoint(function() {
+        $('.sideBtn').removeClass('activeBtn');
+        $('.sectionTwo').addClass('activeBtn');
+        $('.section2 .leftSectionText').addClass('fadeInLeftBig animated').show();
+        $('.section2 .rightSectionText').addClass('fadeInRightBig animated').show();
+        $('.leftSectionText').removeClass('fadeOutLeftBig');
+        $('.rightSectionText').removeClass('fadeOutRightBig');    
+    });
+         
     
     /* End add activeBtn for sideBtn */
     
