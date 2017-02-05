@@ -58,8 +58,8 @@ $(document).ready(function()
         var sectionTwo = $('.section2').offset().top;
         var sectionThree = $('.section3').offset().top;
         var sectionFour = $('.section4').offset().top;
-        
         var windowLocal = $(window).scrollTop();
+        
         if (sectionOne > windowLocal)
         {
             $('.sideBtn').removeClass('activeBtn');
