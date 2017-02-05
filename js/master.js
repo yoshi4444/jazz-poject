@@ -60,7 +60,9 @@ $(document).ready(function()
         var sectionFour = $('.section4').offset().top;
         var windowLocal = topNav;
         
-        if (sectionOne == windowLocal)
+        alert(sectionOne);
+        
+        if (sectionOne >= windowLocal)
         {
             setTimeout(function()
             {
@@ -70,7 +72,7 @@ $(document).ready(function()
                 $('.rightSectionText').removeClass('fadeInRightBig, rotateInDownRight, fadeInUpBig').hide();
             },500);
         }
-        else if (sectionTwo == windowLocal)
+        else if (sectionTwo >= windowLocal)
         {
             setTimeout(function()
             {
@@ -82,7 +84,7 @@ $(document).ready(function()
                 $('.rightSectionText').removeClass('fadeOutRightBig');
             },500);
         }
-        else if (sectionThree == windowLocal)
+        else if (sectionThree >= windowLocal)
         {
             setTimeout(function()
             {
@@ -92,7 +94,7 @@ $(document).ready(function()
                 $('.section3 .rightSectionText').addClass('rotateInDownRight animated').show();
             }, 500);
         }
-        else if (sectionFour == windowLocal)
+        else if (sectionFour >= windowLocal)
         {
             setTimeout(function()
             {
