@@ -198,6 +198,15 @@ body
             { 
                 font-size:24px; padding:20px 0; font-weight:bold;
             }
+            .textImg 
+            {
+                width:100%; 
+                overflow:hidden;
+            }
+                .textImg img
+                {
+                    width:100%;
+                }
     
 .section1
 {
