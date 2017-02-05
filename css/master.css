@@ -188,11 +188,11 @@ body
     }
         .leftSectionText 
         {
-            
+            padding:50px 0 50px 70px;
         }
         .rightSectionText 
         { 
-            
+            padding:50px 70px 50px 0;
         }
             .subSectionTitle 
             { 
