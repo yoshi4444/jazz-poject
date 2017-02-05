@@ -124,7 +124,7 @@ body
     position:relative;
     top:0;
     z-index:2;
-    height:85vh
+    height:100vh
 }
     .sectionTitle
     {
@@ -182,7 +182,7 @@ body
             }
     .sectionText 
     {
-        height:72%;
+        height:76.2%;
         background:#fff;
         color:#0D223F;
         position:relative;
@@ -221,7 +221,6 @@ body
     
 .section1
 {
-    height:100vh;
     margin-top:10px;
 }
     .section1 .sectionTitle
