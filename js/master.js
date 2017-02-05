@@ -54,13 +54,13 @@ $(document).ready(function()
     
     $(window).scroll(function()
     {
-        var sectionOne = $('.section1').position().top;
-        var sectionTwo = $('.section2').position().top;
-        var sectionThree = $('.section3').position().top;
-        var sectionFour = $('.section4').position().top;
+        var sectionOne = $('.section1').offset().top;
+        var sectionTwo = $('.section2').offset().top;
+        var sectionThree = $('.section3').offset().top;
+        var sectionFour = $('.section4').offset().top;
         var windowLocal = $(window).scrollTop();
         
-        if (sectionOne > windowLocal)
+        if (sectionOne == windowLocal)
         {
             setTimeout(function()
             {
@@ -70,7 +70,7 @@ $(document).ready(function()
                 $('.rightSectionText').removeClass('fadeInRightBig, rotateInDownRight, fadeInUpBig').hide();
             },500);
         }
-        else if (sectionTwo > windowLocal)
+        else if (sectionTwo == windowLocal)
         {
             setTimeout(function()
             {
@@ -82,7 +82,7 @@ $(document).ready(function()
                 $('.rightSectionText').removeClass('fadeOutRightBig');
             },500);
         }
-        else if (sectionThree > windowLocal)
+        else if (sectionThree == windowLocal)
         {
             setTimeout(function()
             {
@@ -92,7 +92,7 @@ $(document).ready(function()
                 $('.section3 .rightSectionText').addClass('rotateInDownRight animated').show();
             }, 500);
         }
-        else if (sectionFour > windowLocal)
+        else if (sectionFour == windowLocal)
         {
             setTimeout(function()
             {
