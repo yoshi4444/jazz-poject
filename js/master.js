@@ -30,11 +30,15 @@ $(document).ready(function()
     
     var topNav = 0;
     
-    $(window).scroll(function () {
+    $(window).scroll(function() 
+    {
         var windowPage = $(this).scrollTop();
-        if (windowPage > topNav) {
+        if (windowPage > topNav) 
+        {
             $('#topNavFull').slideUp();
-        } else {
+        } 
+        else 
+        {
            $('#topNavFull').slideDown();
         }
         topNav = windowPage;
@@ -48,7 +52,21 @@ $(document).ready(function()
         $(this).addClass('activeBtn');
     });
     
-    
+    $(window).scroll(function()
+    {
+        var sectionOne = $('.section1').scrollTop();
+        var sectionTwo = $('.section2').scrollTop();
+        if (sectionOne > topNav)
+        {
+            $('.sideBtn').removeClass('activeBtn');
+            $('.sectionOne').addClass('activeBtn');
+        }
+        if (sectionTwo > topNav)
+        {
+            $('.sideBtn').removeClass('activeBtn');
+            $('.sectionTwo').addClass('activeBtn');
+        }
+    });
     
     /* End add activeBtn for sideBtn */
     
