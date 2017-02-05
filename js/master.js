@@ -58,7 +58,7 @@ $(document).ready(function()
         var sectionTwo = $('.section2').offset().top;
         var sectionThree = $('.section3').offset().top;
         var sectionFour = $('.section4').offset().top;
-        var windowLocal = $(window).offset().top;
+        var windowLocal = windowPage;
         
         
         if (sectionOne >= windowLocal)
