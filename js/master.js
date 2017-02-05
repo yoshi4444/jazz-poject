@@ -62,7 +62,7 @@ $(document).ready(function()
         
         if (sectionOne > windowLocal)
         {
-            setTimeOut(function()
+            setTimeout(function()
             {
                 $('.sideBtn').removeClass('activeBtn');
                 $('.sectionOne').addClass('activeBtn');
@@ -72,7 +72,7 @@ $(document).ready(function()
         }
         else if (sectionTwo > windowLocal)
         {
-            setTimeOut(function()
+            setTimeout(function()
             {
                 $('.sideBtn').removeClass('activeBtn');
                 $('.sectionTwo').addClass('activeBtn');
@@ -84,7 +84,7 @@ $(document).ready(function()
         }
         else if (sectionThree > windowLocal)
         {
-            setTimeOut(function()
+            setTimeout(function()
             {
                 $('.sideBtn').removeClass('activeBtn');
                 $('.sectionThree').addClass('activeBtn');
@@ -94,7 +94,7 @@ $(document).ready(function()
         }
         else if (sectionFour > windowLocal)
         {
-            setTimeOut(function()
+            setTimeout(function()
             {
                 $('.sideBtn').removeClass('activeBtn');
                 $('.sectionFour').addClass('activeBtn');
