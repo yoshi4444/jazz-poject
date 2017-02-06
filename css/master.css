@@ -5,6 +5,11 @@ body
     font-family:'Montserrat','Arial',sans-serif;
 }
 
+a
+{
+    color:#F89F1F;    
+}
+
 .absoluteBtn
 {
     left:50%;
@@ -54,7 +59,14 @@ body
         {
             height:40px;
         }
-
+    #phoneBox
+    {
+        float:right;
+        padding-right:40px;
+        font-size:18px;
+        color:#0D223F;
+    }
+    
 #bgImg 
 {
     position:fixed;
