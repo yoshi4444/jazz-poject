@@ -262,7 +262,7 @@ body
         {
             left:0;
             position:relative;
-            padding:0 50px;
+            padding:10px 50px;
             text-align:center;
         }
         .rightSectionText
@@ -271,6 +271,8 @@ body
             position:relative;
             text-align:center;
             width:98%;
+            padding:10px 0;
+            top:0;
         }
 }
 
