@@ -248,24 +248,28 @@ body
 {
     .mainSection
     {
-        height:160vh;
+        height:140vh;
     }
     .lvlOneDivide 
     { 
         display:block; 
     }
-    .leftSectionText
+    .sectionText
     {
-        left:0;
-        position:relative;
-        padding:0 50px;
-        text-align:center;
+        height:83%;
     }
-    .rightSectionText
-    {
-        left:0;
-        position:relative;
-        text-align:center;
-        width:98%;
-    }
+        .leftSectionText
+        {
+            left:0;
+            position:relative;
+            padding:0 50px;
+            text-align:center;
+        }
+        .rightSectionText
+        {
+            left:0;
+            position:relative;
+            text-align:center;
+            width:98%;
+        }
 }
