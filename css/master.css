@@ -65,7 +65,7 @@ body
 
     #bgImg img
     {
-        min-width:1400px;
+        min-width:1600px;
         max-width:100%;
     }
 
@@ -242,6 +242,10 @@ body
 
 @media screen and (max-width:990px)
 {
+    #sideNav 
+    {
+        top:25vh;
+    }
     .mainSection
     {
         height:140vh;
@@ -267,5 +271,21 @@ body
             position:relative;
             text-align:center;
             width:98%;
+        }
+}
+
+@media screen and (max-width:767px)
+{
+    #bgImg img
+    {
+        min-width:1100px;
+    }
+    .mainSection
+    {
+        height:auto;
+    }
+        .sectionText 
+        {
+            height:auto;
         }
 }
