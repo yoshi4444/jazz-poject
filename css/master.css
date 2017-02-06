@@ -85,10 +85,10 @@ body
     .sideBtn
     {
         background:transparent;
-        width:20px;
-        height:20px;
+        width:40px;
+        height:40px;
         position:relative;
-        margin:20px;
+        margin:20px 2px;
         border-radius:50%; 
         transition:all .5s ease-in-out;
     }
@@ -96,16 +96,14 @@ body
     .innerSideBtn 
     {
         background:#000;
-        width:6px;
-        height:6px;
+        width:8px;
+        height:8px;
         border-radius:50%;
     }
 
     .sideBtn:hover 
     {
         background:rgba(0, 0, 0, 0.1);
-        width:20px;
-        height:20px;
     }
     
     .activeBtn
