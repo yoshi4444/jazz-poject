@@ -237,3 +237,13 @@ body
 {
     overflow:hidden; 
 }
+
+.lvlOneDivide 
+{ 
+    display:none; 
+}
+
+@media screen and (max-width:990px)
+{
+    .lvlOneDivide { display:block; }
+}
