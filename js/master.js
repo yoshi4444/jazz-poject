@@ -28,7 +28,7 @@ $(document).ready(function()
     
     /* Start Hide or Show Header on Scroll */
     
-    var topNav = 0;
+    var topNav = 20;
     
     $(window).scroll(function() 
     {
