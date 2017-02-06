@@ -224,6 +224,7 @@ body
 .section1
 {
     margin-top:10px;
+    height:100vh;
 }
     .section1 .sectionTitle
     {
@@ -245,5 +246,26 @@ body
 
 @media screen and (max-width:990px)
 {
-    .lvlOneDivide { display:block; }
+    .mainSection
+    {
+        height:100vh;
+    }
+    .lvlOneDivide 
+    { 
+        display:block; 
+    }
+    .leftSectionText
+    {
+        left:0;
+        position:relative;
+        padding:0 50px;
+        text-align:center;
+    }
+    .rightSectionText
+    {
+        left:0;
+        position:relative;
+        text-align:center;
+        width:98%;
+    }
 }
