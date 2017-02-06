@@ -224,7 +224,7 @@ body
 .section1
 {
     margin-top:10px;
-    height:100vh;
+    height:100vh !important;
 }
     .section1 .sectionTitle
     {
